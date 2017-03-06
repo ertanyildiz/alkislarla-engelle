@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Kategorileri geri getir",
-  "description": "Alkişlarla engelle",
+  "name": "Alkışlarla engelle",
+  "description": "Alkışlarla engelle",
   "version": "1.0",
 
   "browser_action": {
@@ -15,7 +15,7 @@
     },
     "options_page": "options.html",
 
-  "icons": { "16": "alkislarla-16.png",
+  "icons": { "16": "alkislarla-48.png",
            "48": "alkislarla-48.png",
           "128": "alkislarla-128.png" },
 
