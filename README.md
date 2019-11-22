@@ -7,6 +7,7 @@ val conf = SparkConf().setMaster("local[*]").setAppName("sampleapp");
 val sc = JavaSparkContext(conf);
 //set data
 val data = sc.parallelize(listOf(10,20,20,40))
+//write first distict value to Pilosa
 val sparkValues = mapOf<String, Any>("field_name" to data.distinct().first())
 
 //set import options
