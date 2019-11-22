@@ -3,6 +3,12 @@ kullanıcı bazlı video engelleme eklentisi
 
 ``` kotlin
 
+//init Pilosa client and set index
+val client = getClient()
+val indexName = "sample-index"
+val schema = client.readSchema()
+val index = makeIndex(schema, indexName)
+
 val conf = SparkConf().setMaster("local[*]").setAppName("sampleapp");
 val sc = JavaSparkContext(conf);
 //set data
